@@ -1,0 +1,81 @@
+<style>
+    /* Custom CSS for Game Aesthetics */
+    body {
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f0f8ff; /* Light background */
+        color: #333;
+    }
+
+    h1 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    /* Game Board Styling */
+    #game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 5px;
+        background-color: #34495e; /* Dark grid background */
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Individual Cell Styling */
+    .cell {
+        background-color: #ecf0f1; /* Light cell background */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        border-radius: 5px;
+    }
+
+    .cell:hover:not(.filled) {
+        background-color: #bdc3c7; /* Subtle hover effect */
+    }
+
+    /* Player Markers */
+    .X {
+        color: #e74c3c; /* Red for X */
+    }
+
+    .O {
+        color: #3498db; /* Blue for O */
+    }
+
+    /* Info and Button Styling */
+    #status-message {
+        margin: 20px 0;
+        font-size: 1.5em;
+        font-weight: 600;
+        min-height: 30px; /* Reserve space */
+    }
+
+    #reset-button {
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #2ecc71; /* Green color */
+        color: white;
+        transition: background-color 0.2s;
+        margin-top: 10px;
+    }
+
+    #reset-button:hover {
+        background-color: #27ae60;
+    }
+</style>
